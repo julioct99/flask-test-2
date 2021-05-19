@@ -4,10 +4,10 @@ from flask import Flask
 from flask_restful import Api
 from flask_jwt import JWT
 
-from security import authenticate, identity
-from resources.user import UserRegister
-from resources.item import Item, ItemList
-from resources.store import Store, StoreList
+from app.security import authenticate, identity
+from app.resources.user import UserRegister
+from app.resources.item import Item, ItemList
+from app.resources.store import Store, StoreList
 
 app = Flask(__name__)
 
